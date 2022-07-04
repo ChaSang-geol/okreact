@@ -6,8 +6,8 @@ function Contact() {
     <div>
       <h1>Contact</h1>
       <ul>
-        {list.map((item, index) => (
-          <ListComp item={item} idx={index}></ListComp>
+        {list.map((item, index, key) => (
+          <ListComp key={key} item={item} idx={index}></ListComp>
         ))}
       </ul>
     </div>
